@@ -16,7 +16,7 @@ module "eks" {
       desired_size  = 1
 
       ami_type       = "AL2023_x86_64_STANDARD"  # or ARM_64 if Graviton
-      instance_types = ["t2.micro"]
+      instance_types = ["t3.micro"]
       capacity_type  = "ON_DEMAND"
 
       tags = { ExtraTag = "helloworld" }
